@@ -48,7 +48,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
     position: fixed;
     top: 0;
-    left; 0;
+    left: 0;
 }
 
 
@@ -72,9 +72,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 #ejercicioSiete{
 
-    display: flex;
-    flex-direction: row-reverse;
-    justify-items: space-between;
-    align-items: center;
+    align-items: flex-start;
+    align-items: rowv reverse;
 
 }
