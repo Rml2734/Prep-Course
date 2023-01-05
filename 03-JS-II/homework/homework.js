@@ -110,9 +110,10 @@ function esEntero(numero) {
   // Ejemplo: 1 -> true
   // Ejemplo: -10 -> true
   // De lo contrario, devuelve "false"
-  // Pista: Puedes resolver esto usando `Math.floor`
+  // Pista: Puedes resolver esto usando `Math.floor` 5.2 --> 5; 7--> 7
   // Tu código:
   return numero % 1 === 0;
+
   
 }
 
@@ -134,7 +135,10 @@ function fizzBuzz(numero) {
     return "buzz";
   }
   return numero;
-
+  // if (numero % 3 === 0 && numero % 5 === 0) return "fizzbuzz";
+  // if (numero % 3 === 0) return "fizz";
+  // if (numero % 5 === 0) return "buzz";
+  // return numero
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -165,6 +169,12 @@ else
 {
   return false;
 }
+// if (num1 < 0 || num2 < 0 || num3 < 0) return "Hay negativos"
+// if (num1 === 0 || num2 === 0 || num3 === 0) return "Error"
+// if (num1 > num2 && num1 > num3 && num1 > 0) return "Número 1 es mayor y positivo";
+// if ( num3 > num1 && num3 > num2) return num3 + 1;
+//return false
+
 }
 
 function esPrimo(numero) {
@@ -183,6 +193,12 @@ function esPrimo(numero) {
   }
  }
  return true;
+
+ //if (numero === 1 || numero === 0) return false;
+ // for(let i = 2; i < numero; i++){ //nota i++ es igual a i=i+1
+// if (numero % i === 0) return false
+ //}
+ // return true
 }
 
 function esVerdadero(valor){
@@ -194,7 +210,9 @@ if (valor === true)
   return "Soy verdadero" 
 }
 return "Soy falso"
+
 }
+
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
@@ -207,6 +225,12 @@ function tablaDelSeis(){
   }
   return tabla;
 
+  //let array = [];
+  //for (let i = 0; i <= 10; i**){
+  // array.push(i * 6);  
+  //}
+  //return array;
+
 }
 
 function tieneTresDigitos(numero){
@@ -214,7 +238,11 @@ function tieneTresDigitos(numero){
   //Escribe tu código aquí
   if(numero > 99 && numero < 1000) return true;
   return false;
+
+
 }
+
+
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
@@ -226,6 +254,7 @@ function doWhile(numero) {
     i++
   } while ( i < 8 )
   return numero
+
 }
 
 

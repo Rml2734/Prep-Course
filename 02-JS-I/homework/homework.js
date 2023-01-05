@@ -135,9 +135,9 @@ function elevarAlCuadrado(num) {
   
 //var resultado = Math.pow(num, 2);
 //return resultado;
-
-  var resultado = num * num;
-  return resultado;
+  return Math.pow(num, 2)
+  //var resultado = num * num;
+  //return resultado;
 }
 
 function elevarAlCubo(num) {
