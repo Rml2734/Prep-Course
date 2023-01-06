@@ -123,12 +123,14 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
   if (arguments.length < 1) return 0;
   var result = 1;
   for (let i = 0; i < arguments.length; i++){
     result *= arguments[i];
   }
   return result;
+
 }
 
 
@@ -164,11 +166,19 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   // n = 25 --> .toString() --> n = '25'
+
   var newString = n.toString();
   for (i = 0; i < newString.length; i++ ) {
     if (newString[0] ===  "9") return true;
   }
   return false;
+
+  // let numero = n.toString()
+  // if (numero.chartAt[0] === "9"){
+  // return true  
+  //}
+  // return false
+
 }
 
 
@@ -180,6 +190,15 @@ function todosIguales(arreglo) {
     if (arreglo[0] === arreglo[i + 1]) return true;
   }
   return false;
+
+  // let numero = arreglo[0]
+  //for (let i = o; < arreglo.length; i++){
+  //if (numero === arreglo[i]{
+  //  
+  //}return true)  
+  //}
+  //return false
+
 } 
 
 
@@ -190,7 +209,7 @@ function mesesDelAño(array) {
   // Tu código:
   // newArray = ['Enero', 'Marzo', 'Noviembre']
   var newArray = []
-  for (i = 0; i < array.length; i++){
+  for (let i = 0; i < array.length; i++){
     if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
       newArray.push(array[i]);
     }
@@ -227,7 +246,7 @@ function breakStatement(numero) {
   // Tu código:
   var newArray = [];
   var cuenta = numero; 
-  for (i = 0; i < 10; i++){
+  for (var i = 0; i < 10; i++){
     cuenta = cuenta + 2;
     if (cuenta === i) break;
     else newArray.push(cuenta);
@@ -247,7 +266,7 @@ function continueStatement(numero) {
   // Tu código:
   var newArray = [];
   var cuenta = numero;
-  for (i = 0; i < 10; i++){
+  for ( let i = 0; i < 10; i++){
     if (i === 5) continue;
     else cuenta += 2;
     newArray.push(cuenta);
